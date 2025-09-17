@@ -4,74 +4,80 @@ body {
   scroll-behavior: smooth;
 }
 
-.header {
+.navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background: #222;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
+  color: #fff;
   z-index: 1000;
 }
 
-.header a {
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
 }
 
 .section {
-  padding: 100px 20px;
-  margin-top: 60px;
+  min-height: 100vh;
+  padding: 6rem 2rem 3rem;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.about { background: #f0f0f0; }
+.activities { background: #e0f7fa; }
+.application { background: #fff3e0; }
+.organisations { background: #e8f5e9; }
+.contact { background: #f9f9f9; }
+
+.activities ul {
+  list-style: disc;
+  padding-left: 2rem;
 }
 
-.card {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #f9f9f9;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-  max-width: 400px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.btn {
+button {
+  padding: 0.7rem 1.2rem;
+  border: none;
   background: #0077cc;
   color: white;
-  padding: 10px;
-  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 5px;
+  margin-top: 1rem;
 }
 
-.btn:hover {
+button:hover {
   background: #005fa3;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+}
+
+form input, form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
 }

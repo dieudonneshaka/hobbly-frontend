@@ -1,117 +1,90 @@
+
 import React from "react";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      {/* Header */}
-      <header className="header">
-        <h1 className="logo">Hobbly Technologies Oy</h1>
-        <nav>
-          <a href="#about">About us</a>
-          <a href="#activities">Activities</a>
-          <a href="#application">Application</a>
-          <a href="#organisations">Organisations</a>
-          <a href="#contact">Contact us</a>
-        </nav>
-      </header>
+    <div className="App">
+      {/* Navbar */}
+      <nav className="navbar">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#application">Application</a></li>
+          <li><a href="#organisations">Organisations</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
 
       {/* About Us */}
-      <section id="about" className="section">
+      <section id="about" className="section about">
         <h2>About Us</h2>
         <p>
           Hobbly Technologies Oy is a modern technology company, whose mission
-          is to make people’s everyday lives easier by making hobbies and leisure
-          opportunities easy to find and accessible. The company aims to enhance
-          people’s well-being and sense of community by providing digital
-          solutions that connect users with hobbies and service providers.
+          is to make people's everyday lives easier by making hobbies and
+          leisure opportunities easy to find and accessible. The company aims
+          to enhance people's well-being and sense of community by providing
+          digital solutions that connect users with hobbies and service
+          providers.
         </p>
-        <img
-          src="https://source.unsplash.com/800x400/?technology,community"
-          alt="About us"
-        />
       </section>
 
       {/* Activities */}
-      <section id="activities" className="section">
+      <section id="activities" className="section activities">
         <h2>Activities</h2>
-        <div className="cards">
-          <div className="card">
-            <h3>Sea Expedition across the Caribbean</h3>
-            <p>
-              A sea journey across the Helsinki archipelago with adventures and
-              stops at picturesque locations.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Pirate Festival with Music & Dance</h3>
-            <p>
-              A celebration of pirate culture with live music, dancing, and
-              street performances.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Pirate Cooking Masterclass</h3>
-            <p>A culinary masterclass on traditional pirate cuisine.</p>
-          </div>
-          <div className="card">
-            <h3>Navigation, Knots & Survival at Sea</h3>
-            <p>
-              Training in navigation, maritime knots, and basic survival skills
-              at sea.
-            </p>
-          </div>
-        </div>
+        <ul>
+          <li><b>Sea Expedition across the Caribbean</b> – A sea journey across the Helsinki archipelago with adventures and stops at picturesque locations.</li>
+          <li><b>Pirate Festival with Music & Dance</b> – A celebration of pirate culture with live music, dancing, street performances.</li>
+          <li><b>Pirate Cooking Masterclass</b> – A culinary masterclass on traditional pirate cuisine.</li>
+          <li><b>Navigation, Knots & Survival at Sea</b> – Training in navigation, maritime knots, and basic survival skills at sea.</li>
+          <li><b>Deep-Sea Shipwreck & Coral Reef Exploration</b> – Exploration of underwater worlds and local shipwreck legends.</li>
+          <li><b>Miniature Shipbuilding Workshop</b> – A practical workshop on building miniature ship models.</li>
+          <li><b>Mystical Quests & Maritime Legends</b> – Online quests about maritime legends and myths.</li>
+          <li><b>Family & Crew Events with Interactive Quests</b> – Games and quests for children and families with the crew.</li>
+          <li><b>Explorer Club – Sea Adventures</b> – An explorers’ club with regular sea adventures.</li>
+          <li><b>Pirate Duels & Naval Tactics</b> – A tournament in naval fencing and battle tactics.</li>
+          <li><b>Masterclass on Attack & Defense Strategies</b> – Training in attack and defense strategies in naval battles.</li>
+          <li><b>Knife & Musket Competition</b> – A tournament in knife and musket skills.</li>
+        </ul>
       </section>
 
       {/* Application */}
-      <section id="application" className="section">
+      <section id="application" className="section application">
         <h2>Application</h2>
         <p>
-          We have a mobile application that helps you find any leisure
-          activities in the Uusimaa region. The mobile application allows users
-          to easily find suitable options and obtain reliable information about
-          service providers. The app serves a wide range of target groups,
-          including children, youth, adults, families, and seniors.
+          We have a mobile application that helps you find any leisure activities in the Uusimaa
+          region. The mobile application allows users to easily find suitable options and obtain
+          reliable information about service providers. The app serves a wide range of target
+          groups, including children, youth, adults, families, and seniors.
         </p>
-        <button className="btn">Download the App</button>
+        <button>Download the APP</button>
       </section>
 
       {/* Organisations */}
-      <section id="organisations" className="section">
+      <section id="organisations" className="section organisations">
         <h2>Organisations</h2>
         <p>
-          We work with various service providers who can easily register on our
-          website and offer their events. Service providers can add their events
-          to our application.
+          We work with various service providers who can easily register on our website
+          and offer their events. Service providers can add their events to our application.
         </p>
-        <img
-          src="https://source.unsplash.com/800x400/?office,team"
-          alt="Organisations"
-        />
+        <button>Create PRO</button>
       </section>
 
       {/* Contact Us */}
-      <section id="contact" className="section">
+      <section id="contact" className="section contact">
         <h2>Contact Us</h2>
-        <form className="contact-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Address" />
+        <form>
+          <input type="text" placeholder="Full name" />
+          <input type="email" placeholder="E-mail address" />
+          <input type="text" placeholder="Phone number" />
           <textarea placeholder="Your message"></textarea>
-          <button type="submit" className="btn">Send Message</button>
+          <button type="submit">Send message</button>
         </form>
-        <p>
-          Address: Rautatieläisenkatu 5, 00520 Helsinki <br />
-          Phone: +7403530530 <br />
-          Email: hobbly@gmail.com
-        </p>
+        <div className="contact-info">
+          <p>Rautatieläisenkatu 5, 00520 Helsinki</p>
+          <p>+7403530530 | hobbly@gmail.com</p>
+        </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Hobbly Technologies Oy</p>
-      </footer>
     </div>
   );
 }
