@@ -9,7 +9,7 @@ body {
   top: 0;
   width: 100%;
   background: #222;
-  color: #fff;
+  color: #FBFFC0;
   z-index: 1000;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .navbar ul li a {
-  color: white;
+  color: #FBFFC0;
   text-decoration: none;
 }
 
