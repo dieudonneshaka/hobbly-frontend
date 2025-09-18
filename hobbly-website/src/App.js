@@ -1,89 +1,89 @@
-
 import React from "react";
 import "./App.css";
 
 function App() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="App">
-      {/* Navbar */}
-      <nav className="navbar">
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#application">Application</a></li>
-          <li><a href="#organisations">Organisations</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
+      {/* Header Navigation */}
+      <header className="header">
+        <nav>
+          <ul>
+            <li onClick={() => scrollToSection("about")}>About Us</li>
+            <li onClick={() => scrollToSection("activities")}>Activities</li>
+            <li onClick={() => scrollToSection("application")}>Application</li>
+            <li onClick={() => scrollToSection("organisations")}>Organisations</li>
+            <li onClick={() => scrollToSection("contact")}>Contact Us</li>
+          </ul>
+        </nav>
+      </header>
 
       {/* About Us */}
       <section id="about" className="section about">
-        <h2>About Us</h2>
+        <h1>About Us</h1>
         <p>
-          Hobbly Technologies Oy is a modern technology company, whose mission
-          is to make people's everyday lives easier by making hobbies and
-          leisure opportunities easy to find and accessible. The company aims
-          to enhance people's well-being and sense of community by providing
-          digital solutions that connect users with hobbies and service
-          providers.
+          Hobbly Technologies OY is a modern technology company, whose mission is
+          to make people’s everyday lives easier by making hobbies and leisure
+          opportunities easy to find and accessible. The company aims to enhance
+          people’s well-being and sense of community by providing digital
+          solutions that connect users with hobbies and service providers.
         </p>
       </section>
 
       {/* Activities */}
       <section id="activities" className="section activities">
-        <h2>Activities</h2>
+        <h1>Activities</h1>
         <ul>
-          <li><b>Sea Expedition across the Caribbean</b> – A sea journey across the Helsinki archipelago with adventures and stops at picturesque locations.</li>
-          <li><b>Pirate Festival with Music & Dance</b> – A celebration of pirate culture with live music, dancing, street performances.</li>
-          <li><b>Pirate Cooking Masterclass</b> – A culinary masterclass on traditional pirate cuisine.</li>
-          <li><b>Navigation, Knots & Survival at Sea</b> – Training in navigation, maritime knots, and basic survival skills at sea.</li>
-          <li><b>Deep-Sea Shipwreck & Coral Reef Exploration</b> – Exploration of underwater worlds and local shipwreck legends.</li>
-          <li><b>Miniature Shipbuilding Workshop</b> – A practical workshop on building miniature ship models.</li>
-          <li><b>Mystical Quests & Maritime Legends</b> – Online quests about maritime legends and myths.</li>
-          <li><b>Family & Crew Events with Interactive Quests</b> – Games and quests for children and families with the crew.</li>
-          <li><b>Explorer Club – Sea Adventures</b> – An explorers’ club with regular sea adventures.</li>
-          <li><b>Pirate Duels & Naval Tactics</b> – A tournament in naval fencing and battle tactics.</li>
-          <li><b>Masterclass on Attack & Defense Strategies</b> – Training in attack and defense strategies in naval battles.</li>
-          <li><b>Knife & Musket Competition</b> – A tournament in knife and musket skills.</li>
+          <li>Sea Expedition across the Caribbean</li>
+          <li>Pirate Festival with Music & Dance</li>
+          <li>Pirate Cooking Masterclass</li>
+          <li>Navigation, Knots & Survival at Sea</li>
+          <li>Deep-Sea Shipwreck & Coral Reef Exploration</li>
+          <li>Miniature Shipbuilding Workshop</li>
+          <li>Mystical Quests & Maritime Legends</li>
+          <li>Explorer Club – Sea Adventures</li>
         </ul>
       </section>
 
       {/* Application */}
       <section id="application" className="section application">
-        <h2>Application</h2>
+        <h1>Application</h1>
         <p>
-          We have a mobile application that helps you find any leisure activities in the Uusimaa
-          region. The mobile application allows users to easily find suitable options and obtain
-          reliable information about service providers. The app serves a wide range of target
-          groups, including children, youth, adults, families, and seniors.
+          We have a mobile application that helps you find any leisure
+          activities in the Uusimaa region. It allows users to easily find
+          suitable options and obtain reliable information about service
+          providers. The app serves children, youth, adults, families, and
+          seniors.
         </p>
-        <button>Download the APP</button>
+        <button>Download the App</button>
       </section>
 
       {/* Organisations */}
       <section id="organisations" className="section organisations">
-        <h2>Organisations</h2>
+        <h1>Organisations</h1>
         <p>
-          We work with various service providers who can easily register on our website
-          and offer their events. Service providers can add their events to our application.
+          We work with various service providers who can easily register on our
+          website and offer their events. Service providers can add their events
+          to our application.
         </p>
-        <button>Create PRO</button>
       </section>
 
       {/* Contact Us */}
       <section id="contact" className="section contact">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
+        <p>Hobbly Technologies Oy</p>
+        <p>Rautatieläisenkatu 5, 00520 Helsinki</p>
+        <p>Email: hobbly@gmail.com</p>
+        <p>Phone: +7403530530</p>
         <form>
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="E-mail address" />
-          <input type="text" placeholder="Phone number" />
-          <textarea placeholder="Your message"></textarea>
-          <button type="submit">Send message</button>
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
         </form>
-        <div className="contact-info">
-          <p>Rautatieläisenkatu 5, 00520 Helsinki</p>
-          <p>+7403530530 | hobbly@gmail.com</p>
-        </div>
       </section>
     </div>
   );
