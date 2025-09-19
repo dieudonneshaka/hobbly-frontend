@@ -28,7 +28,8 @@ export default function App() {
         <div className="nav-left">
           <div className="logo">
             {/* small svg-ish icon + text like your PNG */}
-            <span className="logo-icon" aria-hidden>🞄</span>
+            <img src="/images/about-logo.png" alt= ""className="about-logo" />
+            
             <span className="logo-text">Hobbly</span>
           </div>
         </div>
@@ -59,6 +60,7 @@ export default function App() {
             alt="Hobbly logo"
             onError={(e) => (e.currentTarget.src = "https://via.placeholder.com/90")}
           />
+          <img src="/images/about-logo.png" alt= ""className="about-logo" />
           <h3 className="about-heading">HOBBLY TECHNOLOGIES OY</h3>
           <p className="about-text">
             is a modern technology company, whose mission is to make people's everyday lives easier by making hobbies and leisure opportunities easy to find and accessible. The company aims to enhance people's well-being and sense of community by providing digital solutions that connect users with hobbies and service providers.
