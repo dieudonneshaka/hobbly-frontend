@@ -79,18 +79,26 @@ body{
 .nav-right a { color: #cfeee3; text-decoration:none; font-weight:700; padding:6px; }
 
 /* SECTION TITLE bar */
-.section{
-  padding: 36px 24px;
-  text-align:center;
-}
-.section-title{
-  margin: 6px 0 18px;
-  font-size:22px;
+.section-title {
+  margin: 0;
+  padding: 32px 0;   /* increased vertical padding (higher bar) */
+  display: block;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+
+  font-size: 26px;   /* slightly larger text */
   letter-spacing: 0.08em;
   color: var(--accent);
-  font-weight:700;
-  border-top: 18px solid transparent;
+  font-weight: 700;
+  text-align: center;
+
+  margin-top: -1px;  /* keep touching navbar */
 }
+
+
 
 /* ABOUT (big pale yellow box) */
 .about{

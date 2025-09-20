@@ -23,7 +23,7 @@ export default function App() {
       <nav className="navbar">
         <div className="nav-left">
           <div className="logo">
-            <img src="/images/logo.png" alt="Hobbly logo" className="logo-icon" />
+            <img src=" " alt="Hobbly logo" className="logo-icon" />
             <span className="logo-text">Hobbly</span>
           </div>
         </div>
@@ -86,7 +86,8 @@ export default function App() {
         <div className="two-col">
           <div className="col image-col">
             <img
-              src="/images/phone.png"
+            
+              src="./images/phone.png"
               alt="app phone"
               className="phone-mockup"
             />
@@ -114,8 +115,8 @@ export default function App() {
         <div className="two-col reverse">
           <div className="col image-col">
             <img
-              src="/images/laptop.png"
-              alt="laptop"
+              src="./images/laptop.png"
+              alt="app laptop"
               className="laptop-mockup"
             />
           </div>
