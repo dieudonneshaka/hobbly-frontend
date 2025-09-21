@@ -23,7 +23,7 @@ export default function App() {
       <nav className="navbar">
         <div className="nav-left">
           <div className="logo">
-            <img src=" " alt="Hobbly logo" className="logo-icon" />
+            <img src="/images/logo.png" alt="Hobbly logo" className="logo-icon" />
             <span className="logo-text">Hobbly</span>
           </div>
         </div>
@@ -35,12 +35,6 @@ export default function App() {
           <li><a href="#organisations">Organisations</a></li>
           <li><a href="#contact">Contact us</a></li>
         </ul>
-
-        <div className="nav-right">
-          <a href="/#" aria-label="website">🌐</a>
-          <a href="/#" aria-label="facebook">f</a>
-          <a href="/#" aria-label="linkedin">in</a>
-        </div>
       </nav>
 
       {/* ABOUT */}
@@ -48,18 +42,12 @@ export default function App() {
         <h2 className="section-title">ABOUT US</h2>
 
         <div className="about-hero">
-          <img
-            className="about-logo"
-            src="/images/logo.png"
-            alt="Hobbly logo"
-          />
+          <img className="about-logo" src="/images/logo.png" alt="Hobbly logo" />
           <h3 className="about-heading">HOBBLY TECHNOLOGIES OY</h3>
           <p className="about-text">
-            is a modern technology company, whose mission is to make people's
-            everyday lives easier by making hobbies and leisure opportunities
-            easy to find and accessible. The company aims to enhance people's
-            well-being and sense of community by providing digital solutions
-            that connect users with hobbies and service providers.
+            is a modern technology company, whose mission is to make people's everyday lives easier by making hobbies
+            and leisure opportunities easy to find and accessible. The company aims to enhance people's well-being and
+            sense of community by providing digital solutions that connect users with hobbies and service providers.
           </p>
         </div>
       </section>
@@ -85,21 +73,15 @@ export default function App() {
 
         <div className="two-col">
           <div className="col image-col">
-            <img
-            
-              src="./images/phone.png"
-              alt="app phone"
-              className="phone-mockup"
-            />
+            <img src="/images/phone.png" alt="app phone" className="phone-mockup" />
           </div>
 
           <div className="col text-col">
             <p className="lead">
-              We have a mobile application that helps you find any leisure
-              activities in the Uusimaa region. The mobile application allows
-              users to easily find suitable options and obtain reliable
-              information about service providers. The app serves a wide range
-              of target groups, including children, youth, adults, families, and seniors.
+              We have a mobile application that helps you find any leisure activities in the Uusimaa region. The mobile
+              application allows users to easily find suitable options and obtain reliable information about service
+              providers. The app serves a wide range of target groups, including children, youth, adults, families, and
+              seniors.
             </p>
             <div className="download-wrap">
               <button className="btn">Download the APP</button>
@@ -114,18 +96,13 @@ export default function App() {
 
         <div className="two-col reverse">
           <div className="col image-col">
-            <img
-              src="./images/laptop.png"
-              alt="app laptop"
-              className="laptop-mockup"
-            />
+            <img src="/images/laptop.png" alt="app laptop" className="laptop-mockup" />
           </div>
 
           <div className="col text-col">
             <p className="lead">
-              We work with various service providers who can easily register on
-              our website and offer their events. Service providers can add
-              their events to our application.
+              We work with various service providers who can easily register on our website and offer their events.
+              Service providers can add their events to our application.
             </p>
             <div className="download-wrap">
               <button className="btn">Create PRO</button>
@@ -168,4 +145,3 @@ export default function App() {
     </div>
   );
 }
-  

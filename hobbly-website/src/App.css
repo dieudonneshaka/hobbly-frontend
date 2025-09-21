@@ -125,14 +125,16 @@ body{
   color: var(--green-dark);
   letter-spacing: 0.28em;
   font-weight:700;
+  text-align: center;
 }
 .about-text{
-  color: #2f4a42;
-  line-height:1.9;
-  font-weight:300;
-  max-width:760px;
+   color: #2f4a42;
+  line-height: 1.9;
+  font-weight: 300;
+  max-width: 760px;
   margin: 0 auto;
-  font-size:16px;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* ACTIVITIES area (muted bluish panel behind cards) */
@@ -198,6 +200,7 @@ body{
 .phone-mockup{ width:220px; border-radius: 18px; box-shadow: 0 8px 18px rgba(0,0,0,0.25); }
 .laptop-mockup{ width:420px; border-radius: 12px; box-shadow: 0 8px 18px rgba(0,0,0,0.25); }
 
+
 .lead{ color:#28322f; line-height:1.8; font-size:16px; font-weight:300; }
 
 /* buttons */
@@ -238,6 +241,7 @@ body{
   border:1px solid rgba(0,0,0,0.12);
 }
 .send-area{ display:flex; justify-content:flex-end; margin-top:8px; }
+
 
 /* FOOTER */
 .footer{
