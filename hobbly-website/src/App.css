@@ -103,7 +103,7 @@ body{
 /* ABOUT (big pale yellow box) */
 .about{
   background: var(--yellow);
-  padding-top: 16px;
+  padding-top: 0;    /* removes the gap */
   padding-bottom: 28px;
 }
 .about-hero{
@@ -139,8 +139,9 @@ body{
 
 /* ACTIVITIES area (muted bluish panel behind cards) */
 .activities{
+
   background: #9fb3b3;
-  padding: 28px 24px;
+  padding: 0 24px 28px; /* no top padding, keep side + bottom */
 }
 .cards-wrap{
   max-width:1100px;
@@ -179,6 +180,9 @@ body{
   margin:0;
 }
 
+
+
+
 /* APPLICATION and ORGANISATIONS - two column layout */
 .application{ background: #d7d7d7; }
 .organisations{ background: #cffadf; }
@@ -202,6 +206,10 @@ body{
 
 
 .lead{ color:#28322f; line-height:1.8; font-size:16px; font-weight:300; }
+
+
+
+
 
 /* buttons */
 .btn{
@@ -276,3 +284,5 @@ body{
   .logo-text{ font-size:16px; }
   .about-text{ font-size:15px; line-height:1.7 }
 }
+
+
